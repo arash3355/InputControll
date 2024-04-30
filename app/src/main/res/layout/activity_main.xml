@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:padding="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="Input Control Task"
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+
+
+        <!-- Date Time Picker -->
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Select Date"
+            android:id="@+id/date_button"/>
+
+        <TextView
+            android:id="@+id/date_text"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Selected Date:"
+            android:layout_marginStart="12dp" />
+
+
+        <!-- Alert Dialog -->
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Show Alert"
+            android:id="@+id/alert_button"
+            android:layout_marginTop="16dp" />
+
+        <!-- Toast -->
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Show Toast"
+            android:id="@+id/toast_button"
+            android:layout_marginTop="16dp" />
+
+        <!-- Phone Number Input -->
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:hint="Enter phone number"
+            android:inputType="phone"
+            android:id="@+id/phone_edit_text"
+            android:background="@drawable/rounded_textfield"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Submit Phone Number"
+            android:id="@+id/submit_button"
+            />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
